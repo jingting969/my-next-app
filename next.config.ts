@@ -1,9 +1,10 @@
-import type { NextConfig } from "next";
+import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  output: 'export', // 启用静态导出
-};
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
+if (process.env.NODE_ENV === "development") {
+  await setupDevPlatform();
+}
 
 export default nextConfig;

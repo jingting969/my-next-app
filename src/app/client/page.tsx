@@ -1,6 +1,8 @@
 'use client'
  
 import { useState } from 'react'
+
+export const runtime = "edge";
  
 export default function Counter() {
   const [count, setCount] = useState(0)

@@ -1,5 +1,7 @@
 import { createServerClient } from '../../lib/supabaseClient';
 
+export const runtime = "edge";
+
 export default async function Countries() {
   const supabase = createServerClient();
   const { data: countries } = await supabase.from("countries").select();
