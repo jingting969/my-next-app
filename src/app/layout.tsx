@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// 这些样式适用于应用程序中的每个路由
 import "./globals.css";
 
 const geistSans = Geist({
