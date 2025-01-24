@@ -2,3 +2,7 @@ name = "my-next-app"
 compatibility_date = "2025-01-12"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
+
+[vars]
+SUPABASE_URL=https://fgttngucjgjnsyohixra.supabase.co
+test_name=净霆
